@@ -1,0 +1,240 @@
+.landing{
+height:100vh;
+display:flex;
+align-items:flex-start;
+justify-content:center;
+padding-top:120px;
+
+background:
+radial-gradient(circle at 20% 30%,rgba(255,255,255,0.15),transparent 40%),
+radial-gradient(circle at 80% 70%,rgba(255,255,255,0.1),transparent 40%),
+linear-gradient(135deg,#4e73df,#7b4de0);
+
+font-family:'Poppins',sans-serif;
+}
+
+/* HERO CARD */
+
+.hero{
+text-align:center;
+color:white;
+max-width:750px;
+
+background:rgba(255,255,255,0.12);
+padding:60px 70px;
+border-radius:18px;
+
+backdrop-filter:blur(12px);
+
+box-shadow:
+0 15px 40px rgba(0,0,0,0.25),
+0 0 0 1px rgba(255,255,255,0.15);
+}
+
+/* TITLE */
+
+.hero h1{
+    font-size:60px;
+
+    background:linear-gradient(90deg,#ffffff,#ffe082);
+
+    background-clip:text;              /* ✅ added */
+    -webkit-background-clip:text;
+
+    color:transparent;                 /* ✅ added */
+    -webkit-text-fill-color:transparent;
+}
+
+/* SUBTITLE */
+
+.hero p{
+font-size:20px;
+margin-bottom:40px;
+opacity:0.9;
+line-height:1.6;
+color:#f1f1f1;
+}
+
+/* BUTTON */
+
+.btn-main{
+background:linear-gradient(90deg,#ff7a18,#ffb347);
+color:white;
+padding:16px 45px;
+border-radius:10px;
+text-decoration:none;
+font-weight:600;
+font-size:18px;
+display:inline-block;
+
+box-shadow:0 8px 20px rgba(0,0,0,0.3);
+
+transition:0.3s;
+}
+
+.btn-main:hover{
+transform:translateY(-4px) scale(1.03);
+box-shadow:0 15px 30px rgba(0,0,0,0.35);
+}
+
+/* ---------- DASHBOARD BACKGROUND ---------- */
+
+.dashboard{
+background:linear-gradient(180deg,#f4f6ff,#eef1ff);
+min-height:100vh;
+font-family:'Poppins',sans-serif;
+}
+
+
+/* ---------- HEADER ---------- */
+
+header{
+background:linear-gradient(90deg,#667eea,#7b4de0); /* colored header */
+color:white;
+
+padding:12px 10px;      /* reduced height */
+text-align:center;
+
+font-size:22px;         /* smaller title */
+font-weight:600;
+letter-spacing:0.5px;
+
+box-shadow:0 3px 10px rgba(0,0,0,0.1);
+}
+
+/* ---------- MAIN CONTAINER ---------- */
+
+.container{
+width:80%;
+margin:auto;
+margin-top:25px;
+}
+
+/* ---------- STATS GRID ---------- */
+
+.stats{
+display:grid;
+grid-template-columns:repeat(4,1fr);
+gap:18px;
+margin-bottom:25px;
+}
+
+
+/* ---------- STATS CARDS ---------- */
+
+.stat-card{
+background:white;
+padding:18px;
+border-radius:10px;
+
+box-shadow:0 6px 20px rgba(0,0,0,0.08);
+
+text-align:center;
+
+border-top:4px solid #667eea;
+
+transition:0.3s;
+}
+
+.stat-card:hover{
+transform:translateY(-4px);
+box-shadow:0 10px 25px rgba(0,0,0,0.12);
+}
+
+.stat-card p{
+font-size:22px;
+font-weight:600;
+color:#667eea;
+}
+
+/* ---------- DIFFERENT CARD COLORS ---------- */
+
+.stat-card:nth-child(1){border-top:6px solid #ffb347;}
+.stat-card:nth-child(2){border-top:6px solid #28c76f;}
+.stat-card:nth-child(3){border-top:6px solid #7367f0;}
+.stat-card:nth-child(4){border-top:6px solid #ff6b6b;}
+
+
+/* ---------- CONTENT CARDS ---------- */
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+
+box-shadow:0 6px 20px rgba(0,0,0,0.08);
+
+margin-bottom:25px;
+}
+
+/* ---------- FORM ---------- */
+
+form{
+display:flex;
+gap:10px;
+flex-wrap:wrap;
+}
+
+form input, form select{
+padding:12px;
+border-radius:8px;
+border:1px solid #ddd;
+flex:1;
+}
+
+
+/* ---------- BUTTON ---------- */
+
+button{
+background:linear-gradient(90deg,#667eea,#7b4de0);
+color:white;
+padding:12px 25px;
+border:none;
+border-radius:8px;
+cursor:pointer;
+font-weight:500;
+
+transition:0.3s;
+}
+
+button:hover{
+transform:scale(1.05);
+box-shadow:0 8px 20px rgba(0,0,0,0.2);
+}
+
+
+/* ---------- SEARCH ---------- */
+
+.search-box{
+width:100%;
+padding:14px;
+margin-bottom:20px;
+border-radius:8px;
+border:1px solid #ddd;
+}
+
+
+/* ---------- TABLE ---------- */
+
+table{
+width:100%;
+border-collapse:collapse;
+border-radius:10px;
+overflow:hidden;
+}
+
+th{
+background:#667eea;
+color:white;
+padding:14px;
+}
+
+td{
+padding:14px;
+border-bottom:1px solid #eee;
+text-align:center;
+}
+
+tr:hover{
+background:#f4f6ff;
+}                  

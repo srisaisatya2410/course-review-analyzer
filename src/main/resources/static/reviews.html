@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Course Reviews</title>
+
+<link rel="stylesheet" href="style.css">
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+<body class="dashboard">
+
+<header>
+<h1>Course Review Dashboard</h1>
+</header>
+
+<div class="container">
+
+<!-- Stats Cards -->
+
+<div class="stats">
+
+<div class="stat-card">
+<h3>⭐ Average Rating</h3>
+<p id="avgRating">0</p>
+</div>
+
+<div class="stat-card">
+<h3>🏆 Top Course</h3>
+<p id="topCourse">Loading...</p>
+</div>
+
+<div class="stat-card">
+<h3>📚 Courses</h3>
+<p id="totalCourses">0</p>
+</div>
+
+<div class="stat-card">
+<h3>👨‍🎓 Reviews</h3>
+<p id="totalReviews">0</p>
+</div>
+
+</div>
+
+<!-- Add Review -->
+
+<div class="card">
+
+<h2>Add Review</h2>
+
+<form action="http://localhost:8080/addReview" method="post">
+
+<input name="course" placeholder="Course Name" required>
+
+<input name="student" placeholder="Student Name" required>
+
+<select name="rating">
+
+<option value="1">⭐</option>
+<option value="2">⭐⭐</option>
+<option value="3">⭐⭐⭐</option>
+<option value="4">⭐⭐⭐⭐</option>
+<option value="5">⭐⭐⭐⭐⭐</option>
+
+</select>
+
+<input name="comment" placeholder="Comment">
+
+<button type="submit">Submit Review</button>
+
+</form>
+
+</div>
+
+<!-- Reviews Table -->
+
+<div class="card">
+
+<h2>Reviews</h2>
+
+<input
+id="searchBox"
+placeholder="🔍 Search course..."
+onkeyup="searchCourse()"
+class="search-box">
+
+<table id="reviewTable">
+
+<tr>
+<th>Course</th>
+<th>Student</th>
+<th>Rating</th>
+<th>Comment</th>
+</tr>
+
+</table>
+
+</div>
+
+<!-- Chart -->
+
+<div class="card">
+
+<h2>📊 Course Rating Analytics</h2>
+
+<canvas id="ratingChart"></canvas>
+
+</div>
+
+<!-- Leaderboard -->
+
+<div class="card">
+
+<h2>🏅 Top Reviewers</h2>
+
+<ul id="topReviewers" class="leaderboard"></ul>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
