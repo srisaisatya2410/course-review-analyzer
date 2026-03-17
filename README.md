@@ -104,7 +104,7 @@ http://localhost:8080
 
 ## 🎥 Demo Video
 
-👉 [Watch Project Demo]("demo\execution video.mp4")
+👉 [Watch Project Demo](demo/execution-video.mp4)
 
 ---
 
